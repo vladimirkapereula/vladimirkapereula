@@ -111,7 +111,7 @@ def validate_account():
             sleep(1)
             print(f'*Username {locators.new_username} is displayed on the Menu on the Top right corner of the screen*')
         else:
-            print('user not found.')
+            print('User not found.')
 
 
 #   =================================================================================================================
@@ -159,7 +159,7 @@ def check_social_network_facebook_twitter_linkedin():
     sleep(2)
     print(f'--------------------------------* Check Social Network - Facebook *---------------------------------------')
     if driver.find_element(By.XPATH, '//h3[contains(., "FOLLOW US")]').is_displayed():
-        print('We could find image  FOLLOW US displayed')
+        print('We could find image  "FOLLOW US" displayed')
         print(f' -----------------------------')
         sleep(2)
         facebook = driver.find_element(By.XPATH, '//img[@name="follow_facebook"]')
@@ -299,7 +299,7 @@ def delete_order_and_validate():
         #   assert driver.find_element(By.XPATH, '//label[contains(text(), "No orders"]').is_displayed()
         sleep(2)
         locators.continue_shopping = driver.find_element(By.LINK_TEXT, 'CONTINUE SHOPPING').text
-        print(f' Message for next step was captured: {locators.continue_shopping}')
+        print(f'Message for next step was captured: {locators.continue_shopping}')
         print(f'Order deleted is validated by validating "No orders" text displayed.')
     else:
         print(f'Order is not deleted., print url: {driver.current_url}')
