@@ -35,3 +35,4 @@ to pull and run the selenium scripts
 Automated tests are developed based on Manual Test cases using Jira be-weekly Sprints
 Manual Test Cases are documented in Confluence and managed via Jira Tasks
 
+# aosaws
